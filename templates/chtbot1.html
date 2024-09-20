@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>AID MD</title>
+    <link rel="stylesheet" href="../static/style/chatbot.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src='https://use.fontawesome.com/releases/v5.0.13/js/all.js'></script>
+</head>
+
+<body>
+    <div class="chatbot">
+        <header>
+            <h2>AID MD</h2>
+        </header>
+        <ul class="chatbox">
+            <li class="chat incoming">
+                <span class="material-symbols-outlined">smart_toy</span>
+                <p>Hi there 👋<br> How can I help you today?</p>
+            </li>
+        </ul>
+        <div class="chat-input">
+            <textarea id="userMessage" placeholder="Enter a message..."></textarea>
+            <span id="send-btn" class="material-symbols-outlined">send</span>
+        </div>
+    </div>
+
+    <script>
+        const userMessageInput = document.getElementById('userMessage');
+        const sendButton = document.getElementById('send-btn');
+        const chatbox = document.querySelector('.chatbox');
+
+        sendButton.addEventListener('click', async () => {
+            const userMessage = userMessageInput.value.trim();
+            if (!userMessage) return;
+
+            // Create a new user message in the chatbox
+            const userMessageElement = document.createElement('li');
+            userMessageElement.classList.add('chat', 'outgoing');
+            userMessageElement.innerHTML = `
+                <p>${userMessage}</p>
+            `;
+            chatbox.appendChild(userMessageElement);
+
+            // Clear the user input field
+            userMessageInput.value = '';
+
+            // Scroll to the bottom of the chatbox
+            chatbox.scrollTop = chatbox.scrollHeight;
+
+
+            // Send user's message to ChatGPT API and get a response
+            const chatGPTResponse = await getChatGPTResponse(userMessage);
+
+            // Create a new chatGPT response message in the chatbox
+            const chatGPTResponseElement = document.createElement('li');
+            chatGPTResponseElement.classList.add('chat', 'incoming');
+            chatGPTResponseElement.innerHTML = `
+                <span class="material-symbols-outlined">smart_toy</span>
+                <p>${chatGPTResponse}</p>
+            `;
+            chatbox.appendChild(chatGPTResponseElement);
+
+            // Scroll to the bottom of the chatbox
+        });
+        chatbox.scrollTop = chatbox.scrollHeight;
+
+        async function getChatGPTResponse(userMessage) {
+            try {
+                const response = await fetch('/chat', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+
+                    body: JSON.stringify({
+                        message: userMessage,
+                    }),
+                });
+
+                if (response.ok) {
+                    const data = await response.json();
+                    return data.chatgpt_response; // Updated to match the Flask response field
+                } else {
+                    return 'Error: Something went wrong with ChatGPT.';
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                return 'Error: Something went wrong with ChatGPT.';
+            }
+        }
+
+    </script>
+</body>
+
+</html>
+chatbot_resp = chatbot_response(user_message) 109
+"chatbot_response": chatbot_resp,111
