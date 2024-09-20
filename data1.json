@@ -1,0 +1,744 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Hi there",
+                "How are you",
+                "Is anyone there?",
+                "Hey",
+                "Hello",
+                "Good day"
+            ],
+            "responses": [
+                "Hello, thanks for asking",
+                "Good to see you again",
+                "Hi there",
+                "How can I help you?",
+                "Hello",
+                "Hope you are having a great day!"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "Bye",
+                "See you later",
+                "Goodbye",
+                "Nice chatting to you, bye",
+                "Till next time"
+            ],
+            "responses": [
+                "See you!",
+                "Have a nice day",
+                "Bye! Come back again soon."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": [
+                "Thanks",
+                "Thank you",
+                "That's helpful",
+                "Awesome, thanks",
+                "Thanks for helping me"
+            ],
+            "responses": [
+                "Happy to help!",
+                "Any time!",
+                "My pleasure"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "noanswer",
+            "patterns": [
+                "",
+                "!@#$%^&*()"
+            ],
+            "responses": [
+                "Sorry, can't understand you",
+                "Please give me more info",
+                "Not sure I understand"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Blood Bank",
+            "patterns": [
+                "bank",
+                "Bank",
+                "donor center",
+                "center",
+                "blood mobile",
+                "Blood Mobile",
+                "BANK"
+            ],
+            "responses": [
+                "Please,Enter your District"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "District",
+            "patterns": [
+                "Madurai",
+                "madurai",
+                "madura"
+            ],
+            "responses": [
+                "Government Head Quarters Hospital, Usilampatti Government Head Quarters Hospital, Usilampatti,Madurai.  <iframe src='https://www.google.co.in/maps/place/Government+Madurai+District+Headquarters+Hospital+Usilampatti/@9.9623715,77.7860696,17z/data=!3m1!4b1!4m6!3m5!1s0x3b073720dc7111d1:0x3eb12c6e696bdf30!8m2!3d9.9623662!4d77.7886445!16s%2Fg%2F1hdzvhm9l?entry=ttu' width='300' height='250' style='border:0;' allowfullscreen=' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>",
+                "Madhura Blood Centre 51 A,Harvey Nagar Main Road,Arasaradi, Madurai. <iframe src='https://www.google.co.in/maps/place/Madhura+Blood+Bank/@9.9303157,78.096627,17z/data=!3m1!4b1!4m6!3m5!1s0x3b00cf68a8b2fca1:0x588278f4dffb4a00!8m2!3d9.9303104!4d78.0992019!16s%2Fg%2F11ckrzh930?entry=ttu' width='300' height='250' style='border:0;' allowfullscreen=' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>",
+                "Apollo Specialty Hospital Blood Centre Madurai No.14 Deputy Collectors Colony Lake View Road K.K. Nagar, Madurai. <iframe src='https://www.google.co.in/maps/search/Apollo+Specialty+Hospital+Blood+Centre+Madurai+No.14+Deputy+Collectors+Colony+Lake+View+Road+K.K.+Nagar,+Madurai/@9.9364291,78.1362025,15z/data=!3m1!4b1?entry=ttu' width='300' height='250' style='border:0;' allowfullscreen=' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>",
+                "Sivan Blood Centre (Lakshmiammal Memorial Trust) Plot No.10, D.No. 58A Kuruvikaran Salai 1st Cross Street, Aringnar Anna Nagar, Madurai. <iframe src='https://www.google.co.in/maps/search/Sivan+Blood+Centre+(Lakshmiammal+Memorial+Trust)+Plot+No.10,+D.No.+58A+Kuruvikaran+Salai+1st+Cross+Street,+Aringnar+Anna+Nagar/@9.9216486,78.1383941,18z/data=!3m1!4b1?entry=ttu' width='300' height='250' style='border:0;' allowfullscreen=' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>",
+                "Preethi Hospitals Private Limited No.50, Lower Basement Floor, Melur Main Road, Uthangudi, Madurai District. <iframe src='https://www.google.co.in/maps/search/Preethi+Hospitals+Private+Limited+No.50,+Lower+Basement+Floor,+Melur+Main+Road,+Uthangudi,+Madurai/@9.950748,78.1631345,17z/data=!3m1!4b1?entry=ttu' width='300' height='250' style='border:0;' allowfullscreen=' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Blood group A+ve",
+            "patterns": [
+                "A+",
+                "a+",
+                "A+ve",
+                "a+ve"
+            ],
+            "responses": [
+                {
+                    "text": "Government Head Quarters Hospital, Usilampatti (govt): Available 22.",
+                    "iframeStyle": "border: 0; width: 100%; max-width: 100%; height: auto;",
+                    "url": "https://www.google.co.in/maps/place/Government+Madurai+District+Headquarters+Hospital+Usilampatti/@9.9623715,77.7860696,17z/data=!3m1!4b1!4m6!3m5!1s0x3b073720dc7111d1:0x3eb12c6e696bdf30!8m2!3d9.9623662!4d77.7886445!16s%2Fg%2F1hdzvhm9l?entry=ttu"
+                },
+                {
+                    "text": "Madhura Blood Centre 51 A, Harvey Nagar Main Road, Arasaradi (private): Available 11.",
+                    "iframeStyle": "border: 0; width: 100%; max-width: 100%; height: auto;",
+                    "url": "https://www.google.co.in/maps/place/Madhura+Blood+Bank/@9.9303157,78.096627,17z/data=!3m1!4b1!4m6!3m5!1s0x3b00cf68a8b2fca1:0x588278f4dffb4a00!8m2!3d9.9303104!4d78.0992019!16s%2Fg%2F11ckrzh930?entry=ttu"
+                },
+                {
+                    "text": "Sivan Blood Centre (Lakshmiammal Memorial Trust) Plot No.10, D.No. 58A Kuruvikaran Salai 1st Cross Street, Aringnar Anna Nagar (private): Available 1.",
+                    "iframeStyle": "border: 0; width: 100%; max-width: 100%; height: auto;",
+                    "url": "https://www.google.co.in/maps/search/Sivan+Blood+Centre+(Lakshmiammal+Memorial+Trust)+Plot+No.10,+D.No.+58A+Kuruvikaran+Salai+1st+Cross+Street,+Aringnar+Anna+Nagar/@9.9216486,78.1383941,18z/data=!3m1!4b1?entry=ttu"
+                }
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Blood group A-ve",
+            "patterns": [
+                "A-",
+                "a-",
+                "A-ve",
+                "a-ve"
+            ],
+            "responses": [
+                "Preethi Hospitals Private Limited No.50, Lower Basement Floor, Melur Main Road, Uthangudi, Madurai(private):Availabale 4.",
+                "Apollo Specialty Hospital Blood Centre Madurai No.14 Deputy Collectors Colony Lake View Road K.K. Nagar, Madurai:Availabale 5. "
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Blood group B+ve",
+            "patterns": [
+                "B+",
+                "b+",
+                "B+ve",
+                "b+ve"
+            ],
+            "responses": [
+                "Government Head Quarters Hospital, Usilampatti, Madurai(govt):Available 17. ",
+                "Madhura Blood Centre 51 A,Harvey Nagar Main Road,Arasaradi, Madurai(private):Available 21. ",
+                "Sivan Blood Centre (Lakshmiammal Memorial Trust) Plot No.10, D.No. 58A Kuruvikaran Salai 1st Cross Street, Aringnar Anna Nagar, Madurai:Available 1."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Blood group b-ve",
+            "patterns": [
+                "B-",
+                "b-",
+                "B-ve",
+                "b-ve"
+            ],
+            "responses": [
+                "Government Head Quarters Hospital, Usilampatti, Madurai(govt):Available 3. ",
+                "Madhura Blood Centre 51 A,Harvey Nagar Main Road,Arasaradi, Madurai(private):Available 3. "
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Blood group O+ve",
+            "patterns": [
+                "O+",
+                "o+",
+                "O+ve",
+                "o+ve"
+            ],
+            "responses": [
+                "Government Head Quarters Hospital, Usilampatti, Madurai(govt):Available 20. ",
+                "Madhura Blood Centre 51 A,Harvey Nagar Main Road,Arasaradi, Madurai(private):Available 19. "
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Blood group O-ve",
+            "patterns": [
+                "O-",
+                "o-",
+                "O-ve",
+                "o-ve"
+            ],
+            "responses": [
+                "Government Head Quarters Hospital, Usilampatti, Madurai(govt):Available. ",
+                "Sivan Blood Centre (Lakshmiammal Memorial Trust) Plot No.10, D.No. 58A Kuruvikaran Salai 1st Cross Street, Aringnar Anna Nagar, Madurai(private):Available 1."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Blood group",
+            "patterns": [
+                "AB+",
+                "ab+",
+                "AB+ve",
+                "ab+ve"
+            ],
+            "responses": [
+                "ESI Hospital,Ayanavaram 53, Medavakkam Tank Rd, Thiruvalluvar Nagar, Dr Ambedkar Nagar, Sanyasipuram, Ayanavaram, Chennai(govt):Available 1.",
+                "Institute Of Obstetrics And Gynaecology, Government Hospital For Women And Children Police Commisioners Rd, Egmore,, Chennai(govt):Available 22. ",
+                "Iso And Government Kasturba Gandhi Hospital For Women And Children And General Hospital Victoriya Hostel Road, Triplicane, Chennai(govt):Available 7."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Blood group",
+            "patterns": [
+                "AB-",
+                "ab-",
+                "AB-ve",
+                "ab-ve"
+            ],
+            "responses": [
+                "Sorry,This blood group is not available.If adjent please contact"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "No Blood bank",
+            "patterns": [
+                "List the Blood bank in which blood are not available",
+                "not available",
+                "blood not available",
+                "no blood"
+            ],
+            "responses": [
+                "Christian Mission Hospital 126 F/3 East Veli Street, Madurai "
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Donars",
+            "patterns": [
+                "I need to donate",
+                "Donor",
+                "Donate",
+                "I am willing to donate",
+                "donate"
+            ],
+            "responses": [
+                "What district do you reside in",
+                "Could you please tell me the name of your district?",
+                "Which specific district do you hail from",
+                "If you don't have any concerns, could you let me know the district you're associated with"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Camp",
+            "patterns": [
+                "Camp",
+                "camp"
+            ],
+            "responses": [
+                "Regional Blood Transfusion Centre Lake Area, Melur Road,Madurai On 30 Dec. ",
+                "Government Rajaji HospitalPanagal Rd, Alwarpuram,Madurai On 30 Dec. ",
+                "Government Head Quarters Hospital, Usilampatti Government Head Quarters Hospital, Usilampatti,Madurai On 30 Dec.",
+                "Harshitha Hospital Blood Centre A Unit of Harshitha Hospitals Pvt Ltd No. 41, Maddakulam Main Road, Palanganatham,Madurai On 30 Dec. ",
+                "Madhura Blood Centre 51 A,Harvey Nagar Main Road,Arasaradi, Madurai On 30 Dec."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Vaccine Covid-19",
+            "patterns": [
+                "I need to get vaccinated",
+                "vaccine",
+                "I would like to schedule an appointment to receive the COVID-19 vaccine",
+                "Can you help me find a vaccination center",
+                "I am ready to get vaccinated and would like to know where and when I can receive the vaccine."
+            ],
+            "responses": [
+                "No.945, Thiruvottiyur High Road, Ch 19, Chennai. ",
+                "No.1, Nedunchezhian salai, Manali, Ch-68. ",
+                "NO.47, Swamy Nagar,Madhavaram, Ch. ",
+                "No 88, Kathivakkam high road, Meenambal Nagar, Ch -21. ",
+                "194, Solaiappan Street, Old Washermanpet, Chennai-21. "
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Scheme",
+            "patterns": [
+                "Health And Family Welfare"
+            ],
+            "responses": [
+                "Click the below button to see the schemes:, <br><button type='button' style='background:#579ffb; border:none; border-radius: 5px; padding: 10px; margin-bottom: 3px;'><a style='text-decoration: none; color:white; font-size: medium; font-weight: bold;' href='https://nhm.gov.in/index1.php?lang=1&level=3&lid=309&sublinkid=841' target='_blank'>Schemes</a></button><br>",
+                "Click the below button to see the schemes:, <br><button type='button' style='background:#579ffb; border:none; border-radius: 5px; padding: 10px; margin-bottom: 3px;'><a style='text-decoration: none; color:white; font-size: medium; font-weight: bold;' href='https://chennai.nic.in/departments/social-welfare-sw/#9' target='_blank'>Health & Family welfare Schemes</a></button><br>"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Diseases",
+            "patterns": [
+                "Cold",
+                "Cough and Cold",
+                "Runny Nose"
+            ],
+            "responses": [
+                "Cold is usually caused by rhinoviruses but can also be caused by other viruses such as coronaviruses and adenoviruses. While the common cold is not typically considered a dangerous or life-threatening condition, it can cause discomfort and inconvenience."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Symptoms of cold",
+            "patterns": [
+                "Cold Symptoms",
+                "symptoms of cold",
+                "cold causes"
+            ],
+            "responses": [
+                "Runny or stuffy nose, Sneezing, Sore throat, Coughing, Watery eyes, Fatigue or tiredness, Mild headache"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Tips for cold",
+            "patterns": [
+                "Cold Tips",
+                "Steps to be followed after getting cold",
+                "Tips cold"
+            ],
+            "responses": [
+                "Rest,Stay Hydrated,Humidify the Air,Warm Saltwater Gargle,Avoid Tobacco and Irritants"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Tablets for cold",
+            "patterns": [
+                "Tablets Cold",
+                "Fever Tablets"
+            ],
+            "responses": [
+                "1.Pain Relievers and Fever Reducers, 2.Decongestants 3.Antihistamines"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Worry Cold",
+            "patterns": [
+                "worry cold"
+            ],
+            "responses": [
+                "In general, you do not need to be overly worried about the common cold. The common cold is a viral infection of the upper respiratory tract, and for most people, it is a mild and self-limiting illness that resolves on its own within a week "
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Cancer",
+            "patterns": [
+                "Cancer",
+                "Tumor",
+                "Neoplasm",
+                "Carcinoma"
+            ],
+            "responses": [
+                "Cancer is the common and widely recognized term for the group of diseases characterized by uncontrolled cell growth and the potential to invade or spread to other parts of the body"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "diabetes",
+            "patterns": [
+                "Diabetes",
+                "Diabetic",
+                "Low Blood Sugar",
+                "High Blood Sugar",
+                "Diabetes Mellitus"
+            ],
+            "responses": [
+                "Diabetes is a chronic medical condition that affects how your body regulates blood glucose (sugar) levels. Glucose is a crucial source of energy for your cells, and its levels in the blood need to be carefully controlled. This control is achieved primarily through the hormone insulin, which is produced by the pancreas."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "stroke",
+            "patterns": [
+                "Stroke",
+                "Ischemic Stroke",
+                "Hemorrhagic Stroke"
+            ],
+            "responses": [
+                "A stroke, also known as a cerebrovascular accident (CVA), is a medical condition that occurs when there is a sudden disruption in the blood supply to a part of the brain. This disruption can lead to damage or death of brain cells within minutes, causing a range of neurological symptoms and potential long-term consequences. Strokes can be life-threatening and require immediate medical attention."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "heart disease",
+            "patterns": [
+                "Heart Disease",
+                "Heart Failure",
+                "Pericarditis",
+                "Cardiomyopathy"
+            ],
+            "responses": [
+                "Heart Failure is a group of diseases that affect the heart muscle, leading to structural and functional abnormalities in the heart. In Heart attack, the heart muscle becomes weakened, thickened, stiffened, or enlarged, and as a result, the heart is less able to pump blood effectively. This can lead to a variety of symptoms and potentially serious complications, including heart failure, arrhythmias (abnormal heart rhythms), and, in severe cases, sudden cardiac arrest"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Tablets for heart attack",
+            "patterns": [
+                "Medicine for heartattack",
+                "tablet heartattack"
+            ],
+            "responses": [
+                "I'm not a doctor, but I can provide some general information about the medications commonly used during and after a heart attack 1.Aspirin 2.Nitroglycerin 3.Statins"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Tips for heart attack",
+            "patterns": [
+                "instructions for heart attack",
+                "Heart Failure Tips",
+                "tips heartattack"
+            ],
+            "responses": [
+                "A stroke, also known as a cerebrovascular accident (CVA), is a medical condition that occurs when there is a sudden disruption in the blood supply to a part of the brain. This disruption can lead to damage or death of brain cells within minutes, causing a range of neurological symptoms and potential long-term consequences. Strokes can be life-threatening and require immediate medical attention.",
+                "Call Emergency Services, Chew Aspirin, Stay Calm and Rest,Loosen Tight Clothing, Don't Drive Yourself to the Hospital"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Symptoms of heart attack",
+            "patterns": [
+                "symptoms heartattack"
+            ],
+            "responses": [
+                "The symptoms of a heart attack can vary from person to person, and they may not always be severe or easily recognizable"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Worry Heart attack",
+            "patterns": [
+                "Worry HeartAttack"
+            ],
+            "responses": [
+                "Concerns about heart health and the possibility of experiencing a heart attack are common, especially as people age or if they have risk factors such as a family history of heart disease, high blood pressure, high cholesterol, or smoking. While it's important to take heart health seriously and be aware of the risk factors and symptom"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Tablets for Diabetics",
+            "patterns": [
+                "Medicine Diabetics",
+                "Tablet diabetics"
+            ],
+            "responses": [
+                "I'm not a doctor, but I can offer some general information about medications commonly prescribed for diabetes. 1.Insulin 2.Metformin 3.Sulfonylureas"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Tablets for Stroke",
+            "patterns": [
+                "Medicine Stroke",
+                "Tablet stroke"
+            ],
+            "responses": [
+                "Treatment for strokes, which are medical emergencies caused by a sudden interruption of blood flow to the brain, typically involves urgent medical attention and may include medications and other interventions. However, the specific treatment and medications used depend on the type of stroke, its cause, and the individual's overall health and medical history. 1.Thrombolytic Therapy 2.Antiplatelet Medications"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Tablets for cancer",
+            "patterns": [
+                "Medicine cancer",
+                "tablet cancer"
+            ],
+            "responses": [
+                "Cancer treatment varies widely depending on the type and stage of cancer, as well as individual patient factors. Treatment options for cancer may include surgery, radiation therapy, chemotherapy, immunotherapy, targeted therapy, hormone therapy, stem cell transplant, and precision medicine. These treatments are administered in various forms, including medications, injections, infusions, and oral tablets."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Tips for stroke",
+            "patterns": [
+                "Instructions stroke",
+                "tips stroke",
+                "Firstaid Stroke"
+            ],
+            "responses": [
+                "A stroke is a medical emergency that requires immediate attention. Knowing the signs of a stroke and what to do can help save a life and minimize the long-term effects of a stroke. Here are some important tips for recognizing and responding to a stroke: 1.Ask the person to smile. Check if one side of their face droops or is numb 2.Ask the person to raise both arms. Look for weakness or numbness in one arm or if one arm drifts downward. 3.Ask the person to repeat a simple phrase or sentence. Listen for slurred or garbled speech, or if they are unable to speak or understand."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Tips for Diabetics",
+            "patterns": [
+                "Instructions Diabetics",
+                "Tips diabetics"
+            ],
+            "responses": [
+                "Check your blood sugar levels regularly as advised by your healthcare provider. Monitoring helps you understand how your body responds to food, medication, and activity."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Tips for cancer",
+            "patterns": [
+                "Instructions Cancer",
+                "Tips cancer"
+            ],
+            "responses": [
+                "For Individuals Diagnosed with Cancer:Seek Expert Medical Care,Healthy Lifestyle,Manage Stress"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Symptoms of cancer",
+            "patterns": [
+                "Symptoms cancer"
+            ],
+            "responses": [
+                "Cancer can present a wide range of symptoms, and the specific symptoms a person experiences can vary depending on the type of cancer, its stage, and its location in the body. 1.Unexplained Weight Loss 2.Skin Changes 3.Changes in Bowel or Urinary Habits 4.Bone Pain 5.Breast Changes 6.Swelling in the Abdomen"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Symptoms of diabetics",
+            "patterns": [
+                "Symptom Diabetics"
+            ],
+            "responses": [
+                "Some of the symptoms are 1.Increased Thirst (Polydipsia) 2.Frequent Urination (Polyuria) 3.Excessive Hunger (Polyphagia) 4.Unexplained Weight Loss 5.Slow Healing of Wounds"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Symptoms of stroke",
+            "patterns": [
+                "Symptom stroke"
+            ],
+            "responses": [
+                "Some of the symptoms are 1.Face Drooping 2.Arm Weakness 3.Speech Difficulty 4.Sudden severe headache with no known cause 5.Sudden confusion, difficulty understanding or speaking, or trouble with vision in one or both eyes."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Worry for stroke",
+            "patterns": [
+                "worry stroke"
+            ],
+            "responses": [
+                "It's natural to be concerned about your health and well-being, including the risk of health conditions like stroke"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "worry for diabetics",
+            "patterns": [
+                "worry diabetics"
+            ],
+            "responses": [
+                "It's important to manage your concerns about diabetes in a healthy and constructive way"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "worry of cancer",
+            "patterns": [
+                "worry cancer"
+            ],
+            "responses": [
+                "cancer is a serious health condition that can have a significant impact on individuals and their loved ones. It's essential to address your concerns about cancer in a healthy and constructive way while also managing anxiety or excessive worry. "
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "First aid for stroke",
+            "patterns": [
+                "Firstaid stroke"
+            ],
+            "responses": [
+                "1.Stay Calm and Reassure the Person 2.Do Not Give Food or Drink 3.Note the Time 4.Keep the Person Still 5.Stay with the Person"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "First aid for cold",
+            "patterns": [
+                "firstaid cold"
+            ],
+            "responses": [
+                "There is no specific first aid treatment for the common cold because it is a viral infection, and there is no cure for the cold itself 1.Rest 2.Stay Hydrated 3.Gargle with Salt Water"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "First aid for diabetics",
+            "patterns": [
+                "firstaid diabetics"
+            ],
+            "responses": [
+                "First aid for a person with diabetes depends on whether the individual is experiencing low blood sugar (hypoglycemia) or high blood sugar (hyperglycemia). Low Blood Sugar 1.Offer Sugar 2.Provide Food.High Blood Sugar 1.Administer Insulin 2.Consult a Healthcare Professional"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "First aid for heart attack",
+            "patterns": [
+                "firstaid heartattack"
+            ],
+            "responses": [
+                "First aid for a heart attack is crucial, as it can significantly improve the person's chances of survival and minimize potential heart damage. 1.Loosen Tight Clothing 2.Do Not Give Food or Drink 3.Stay Calm"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "First aid for cancer",
+            "patterns": [
+                "Firstaid cancer"
+            ],
+            "responses": [
+                "Cancer is not a condition that can be treated with first aid. Cancer is a complex group of diseases characterized by the uncontrolled growth and spread of abnormal cells. It typically requires comprehensive medical evaluation, diagnosis, and treatment by healthcare professionals."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Ambulance number",
+            "patterns": [
+                "Ambulance"
+            ],
+            "responses": [
+                "City Ambulance: 2661266",
+                "Narpani Mandram: 2602086",
+                "City Clinic: 2650099; 2580043",
+                "Rajaji Hospital: 2532532-40"
+            ],
+            "context": [
+                ""
+            ]
+        }
+    ]
+}
